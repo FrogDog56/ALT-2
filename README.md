@@ -25,3 +25,22 @@ OCN = UK national and domestic total expenditure
 09CN = Recreation and culture (missing and will update)
 
 10CN = Education
+
+11CN = Restaurants and hotels
+
+12CN = Miscellaneous goods and services
+
+TOURCN = UK and foreign tourist expenditure expenditure
+
+0GSCN = UK national and domestic goods and services
+
+TGCN = Total goods
+
+DGCN = Durable goods
+
+SDGCN = Semi-durable goods
+
+NDGCN = Non-durable goods
+
+SERCN = Total services
+
