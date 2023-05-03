@@ -1,7 +1,7 @@
 # ALT-2
 Does time of year influence consumer spending?
 
-**Table of contents:**
+## **Table of contents:**
 
 OCN = UK national and domestic total expenditure
 
