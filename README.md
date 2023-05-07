@@ -1,5 +1,7 @@
 # ALT-2
-Does time of year influence consumer spending?
+
+How does time of year influence consumer spending in different categories?
+Dataset: UK Consumer Trends 1997 - 2022 (from: kraggle)
 
 **Table of contents:**
 ## **Table of contents:**
