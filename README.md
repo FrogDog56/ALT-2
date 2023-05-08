@@ -1,7 +1,7 @@
 # ALT-2
 
 How does time of year influence consumer spending in different categories?
-Dataset: UK Consumer Trends 1997 - 2022 (from: kraggle)
+Dataset: UK Consumer Trends 1997 - 2022 (from: kaggle)
 
 **Table of contents:**
 ## **Table of contents:**
