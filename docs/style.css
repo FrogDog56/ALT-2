@@ -1,0 +1,57 @@
+:root {
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    border: 0;
+    text-align: center;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3 {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.subgroup {
+    text-align: left;
+}
+
+#main-flex {
+    display: flex;
+}
+
+#main-flex #left {
+    flex: 20%;
+    border: 0;
+    border-right: .25vw;
+    border-color: #000000;
+    border-style: solid;
+    overflow-y: scroll;
+}
+
+#main-flex #right {
+    flex: 80%;
+    overflow-y: scroll;
+}
+
