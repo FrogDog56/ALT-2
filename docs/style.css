@@ -33,10 +33,6 @@ ul li {
     padding: 0;
 }
 
-.subgroup {
-    text-align: left;
-}
-
 #main-flex {
     display: flex;
 }
@@ -48,10 +44,21 @@ ul li {
     border-color: #000000;
     border-style: solid;
     overflow-y: scroll;
+    height: 100vh;
+    line-height: 20px; /* weird fix for scrollbars */
+}
+
+#main-flex #left::-webkit-scrollbar {
+    display: none;
 }
 
 #main-flex #right {
     flex: 80%;
+    height: 100vh;
     overflow-y: scroll;
+}
+
+#main-flex #right::-webkit-scrollbar {
+    display: none;
 }
 
