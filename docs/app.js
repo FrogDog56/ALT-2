@@ -26,4 +26,9 @@ async function next_page() {
   load_html();
 }
 
+async function goto_page(page) {
+  current_page = page;
+  load_html();
+}
+
 load_html();

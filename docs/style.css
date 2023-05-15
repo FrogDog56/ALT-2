@@ -3,6 +3,8 @@
 }
 
 body {
+    font-size: 1.215rem;
+    font-family: sans-serif;
     margin: 0;
     border: 0;
     text-align: center;
@@ -14,13 +16,14 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-h2 {
-    text-decoration: underline;
-}
-
 h3 {
     text-decoration: none;
     font-weight: normal;
+}
+
+h3:hover {
+    text-decoration: underline;
+    color: #f5f5f5;
 }
 
 ul {
@@ -40,6 +43,8 @@ ul li {
 }
 
 #main-flex #left {
+    text-align: left;
+    margin-left: 2.5%;
     flex: 20%;
     border: 0;
     border-right: .25vw;
@@ -64,5 +69,12 @@ ul li {
 
 #main-flex #right::-webkit-scrollbar {
     display: none;
+}
+
+#heading {
+    border: 0;
+    border-bottom: .25vw;
+    border-color: #73C2FB;
+    border-style: solid;
 }
 
