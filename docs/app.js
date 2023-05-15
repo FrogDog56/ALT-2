@@ -9,10 +9,21 @@ const pages = {
   5: "reflection.html"
 }
 
-async function loadHtml() {
-  const response = await fetch("pages/" + pages[0]);
+let current_page = 0;
+
+async function load_html() {
+  const response = await fetch(`pages/${pages[current_page]}`);
   const text = (await response.text()).match(regex);
   document.getElementById("inject").innerHTML = text[0];
 }
 
-loadHtml();
+async function next_page() {
+  if (current_page == 5) {
+    current_page = 0;
+  } else {
+    current_page++;
+  }
+  load_html();
+}
+
+load_html();

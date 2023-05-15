@@ -6,6 +6,8 @@ body {
     margin: 0;
     border: 0;
     text-align: center;
+    background-color: #565c5c;
+    color: #DBDCDE;
 }
 
 body::-webkit-scrollbar {
@@ -41,7 +43,7 @@ ul li {
     flex: 20%;
     border: 0;
     border-right: .25vw;
-    border-color: #000000;
+    border-color: #73C2FB;
     border-style: solid;
     overflow-y: scroll;
     height: 100vh;
@@ -56,6 +58,8 @@ ul li {
     flex: 80%;
     height: 100vh;
     overflow-y: scroll;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #main-flex #right::-webkit-scrollbar {
