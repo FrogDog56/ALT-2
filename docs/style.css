@@ -38,6 +38,10 @@ ul li {
     padding: 0;
 }
 
+.highlight {
+    color: #73C2FB;
+}
+
 #main-flex {
     display: flex;
 }

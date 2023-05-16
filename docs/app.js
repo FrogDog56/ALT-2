@@ -31,4 +31,9 @@ async function goto_page(page) {
   load_html();
 }
 
+async function heading_click(page, element) {
+  goto_page(page);
+  element.classList.add("highlight");
+}
+
 load_html();
