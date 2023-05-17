@@ -2,8 +2,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-def clean_up(data, column):
-    data = data.iloc[42:86]
+def clean_up(data, column, graph_range):
+    if graph_range == 1:
+        data = data.iloc[0:84]
+    elif graph_range == 2:
+        data = data.iloc[0:40]
+    elif graph_range == 3:
+        data = data.iloc[40:84]
     data = data.drop(data.iloc[:, 2:], axis=1)
     data[column]=data[column].str.replace(",", "")
     data[column]=data[column].astype(int)
@@ -17,12 +22,14 @@ def sum_of_medians(data1, data2, data3, col1, col2, col3):
     return res
 
 def main():
-    food_data = pd.read_csv(r"data\01CN.csv")
-    restaurant_data = pd.read_csv(r"data\11CN.csv")
-    clothing_data = pd.read_csv(r"data\03CN.csv")
-    food_data = clean_up(food_data, "Food and non-alcoholic beverages")
-    restaurant_data = clean_up(restaurant_data, "Restaurant and hotels")
-    clothing_data = clean_up(clothing_data, "Clothing and footwear")
+    graph_range = int(input("Select range: (1. Full) (2. First Half) (3. Second Half)\n"))
+
+    food_data = pd.read_csv("data\Food.csv")
+    restaurant_data = pd.read_csv("data\Hotels.csv")
+    clothing_data = pd.read_csv("data\Clothing.csv")
+    food_data = clean_up(food_data, "Food and non-alcoholic beverages", graph_range)
+    restaurant_data = clean_up(restaurant_data, "Restaurant and hotels", graph_range)
+    clothing_data = clean_up(clothing_data, "Clothing and footwear", graph_range)
     median = sum_of_medians(food_data, restaurant_data, clothing_data, "Food and non-alcoholic beverages", "Restaurant and hotels", "Clothing and footwear")
 
     display = input("Which graph do you want to display? (1. Main), (2. Medians)\n")

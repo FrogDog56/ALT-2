@@ -38,8 +38,15 @@ ul li {
     padding: 0;
 }
 
-.highlight {
-    color: #73C2FB;
+img {
+    width: 20vw;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 1vw
+}
+
+.h3 {
+    font-style: italic;
 }
 
 #main-flex {
@@ -80,5 +87,9 @@ ul li {
     border-bottom: .25vw;
     border-color: #73C2FB;
     border-style: solid;
+}
+
+#inject {
+    margin-bottom: 2.5%;
 }
 
