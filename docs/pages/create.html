@@ -12,13 +12,14 @@
       <h3 class="h3 1">Data Analysis Process</h3>
       <p>
         Firstly our program allows the user to choose the graph range and type
-        of graph that they wish to view. We have 3 range options: full 1997 -
-        2017, first half 1997 - 2006 and second half 2007 - 2017. These options
-        can be applied to the median or separate categories graph.
+        of graph that they wish to view in the terminal. We take the input using
+        the standard Python input() function. We have 3 range options: full 1997
+        - 2017, first half 1997 - 2006 and second half 2007 - 2017. These
+        options can be applied to the median or separate categories graph.
       </p>
     </div>
     <div>
-      <h3 class="h3 1">Code</h3>
+      <h3 class="h3 1">Code Snippets</h3>
       <div>
         <h4>CSV data parse function</h4>
         <p>
@@ -26,16 +27,24 @@
           (heading) is the csv heading of the column containing the data values.
           (graph_range) is the range of rows to be displayed on the graph
         </p>
-        <img class="graph" src="/docs/images/code/Clean.png" />
+        <img class="code" src="/docs/images/code/Clean.png" />
       </div>
       <div>
         <h4>Custom median function</h4>
-        <p>We had to create our own median function as we needed the find the median of three values.</p>
-        <img class="graph" src="/docs/images/code/Median.png" />
+        <p>
+          We had to create our own median function as we needed the find the sum
+          of the median of three values to be plotted on the median graph. This
+          was something that we could not achieve using pandas alone.
+        </p>
+        <img class="code" src="/docs/images/code/Median.png" />
       </div>
       <div>
         <h4>Main function</h4>
-        <img class="graph" src="/docs/images/code/Main.png" />
+        <p>
+          This is a standard main function that is called when the script is
+          run. This code takes in user input and displays the selected graph.
+        </p>
+        <img class="code" src="/docs/images/code/Main.png" />
       </div>
     </div>
     <div>

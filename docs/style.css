@@ -1,99 +1,102 @@
 :root {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-    font-size: 1.215rem;
-    font-family: sans-serif;
-    margin: 0;
-    border: 0;
-    text-align: center;
-    background-color: #565c5c;
-    color: #DBDCDE;
+  font-size: 1.215rem;
+  font-family: sans-serif;
+  margin: 0;
+  border: 0;
+  text-align: center;
+  background-color: #565c5c;
+  color: #dbdcde;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 h3 {
-    text-decoration: none;
-    font-weight: normal;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 h3:hover {
-    text-decoration: underline;
-    color: #f5f5f5;
+  text-decoration: underline;
+  color: #f5f5f5;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 ul li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    width: 20vw;
-    border-width: 0px;
-    border-style: solid;
-    border-radius: 1vw
+  width: 20vw;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 1vw;
 }
 
 .h3 {
-    font-style: italic;
+  font-style: italic;
 }
 
 .graph {
-    width: 45vw;
+  width: 45vw;
+}
+
+.code {
+  width: 45vw;
 }
 
 #main-flex {
-    display: flex;
+  display: flex;
 }
 
 #main-flex #left {
-    text-align: left;
-    margin-left: 2.5%;
-    flex: 20%;
-    border: 0;
-    border-right: .25vw;
-    border-color: #73C2FB;
-    border-style: solid;
-    overflow-y: scroll;
-    height: 100vh;
-    line-height: 20px; /* weird fix for scrollbars */
+  text-align: left;
+  margin-left: 2.5%;
+  flex: 20%;
+  border: 0;
+  border-right: 0.25vw;
+  border-color: #73c2fb;
+  border-style: solid;
+  overflow-y: scroll;
+  height: 100vh;
+  line-height: 20px; /* weird fix for scrollbars */
 }
 
 #main-flex #left::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 #main-flex #right {
-    flex: 80%;
-    height: 100vh;
-    overflow-y: scroll;
-    margin-left: 5%;
-    margin-right: 5%;
+  flex: 80%;
+  height: 100vh;
+  overflow-y: scroll;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #main-flex #right::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 #heading {
-    border: 0;
-    border-bottom: .25vw;
-    border-color: #73C2FB;
-    border-style: solid;
+  border: 0;
+  border-bottom: 0.25vw;
+  border-color: #73c2fb;
+  border-style: solid;
 }
 
 #inject {
-    margin-bottom: 2.5%;
+  margin-bottom: 2.5%;
 }
-
