@@ -2,7 +2,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
+#function that cleans segments of data
 def clean_up(data, column, graph_range):
+    #picks range of quarters for graph to display
     if graph_range == 1:
         data = data.iloc[0:84]
     elif graph_range == 2:
@@ -10,10 +12,12 @@ def clean_up(data, column, graph_range):
     elif graph_range == 3:
         data = data.iloc[40:84]
     data = data.drop(data.iloc[:, 2:], axis=1)
+    #parses data for use
     data[column]=data[column].str.replace(",", "")
     data[column]=data[column].astype(int)
     return data
 
+#function thats finds sum of medians
 def sum_of_medians(data1, data2, data3, col1, col2, col3):
     col1 = data1[col1]
     col2 = data2[col2]
@@ -22,7 +26,7 @@ def sum_of_medians(data1, data2, data3, col1, col2, col3):
     return res
 
 def main():
-    graph_range = int(input("Select range: (1. Full) (2. First Half) (3. Second Half)\n"))
+    graph_range = int(input("Select range: (1. Full) (2. First Half) (3. Second Half)\n")) #user input for graph's range
 
     food_data = pd.read_csv("data\Food.csv")
     restaurant_data = pd.read_csv("data\Hotels.csv")

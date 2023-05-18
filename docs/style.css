@@ -49,6 +49,10 @@ img {
     font-style: italic;
 }
 
+.graph {
+    width: 45vw;
+}
+
 #main-flex {
     display: flex;
 }
