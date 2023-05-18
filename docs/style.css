@@ -39,7 +39,7 @@ ul li {
 }
 
 img {
-  width: 20vw;
+  width: 35vw;
   border-width: 0px;
   border-style: solid;
   border-radius: 1vw;
@@ -51,10 +51,20 @@ img {
 
 .graph {
   width: 45vw;
+  transition:transform 0.25s ease;
+}
+
+.graph:hover {
+  transform:scale(1.5);
 }
 
 .code {
   width: 45vw;
+  transition:transform 0.25s ease;
+}
+
+.code:hover {
+  transform:scale(1.5);
 }
 
 #main-flex {
